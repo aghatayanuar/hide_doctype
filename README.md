@@ -1,6 +1,6 @@
 ### Hide Doctype
 
-Hide selected DocTypes from search
+Hide Doctype From Search
 
 ### Installation
 

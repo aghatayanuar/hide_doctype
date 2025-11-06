@@ -3,7 +3,7 @@ name = "hide_doctype"
 authors = [
     { name = "DAS", email = "das@das.com"}
 ]
-description = "Hide selected DocTypes from search"
+description = "Hide Doctype From Search"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

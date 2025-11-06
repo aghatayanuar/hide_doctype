@@ -1,7 +1,7 @@
 app_name = "hide_doctype"
 app_title = "Hide Doctype"
 app_publisher = "DAS"
-app_description = "Hide selected DocTypes from search"
+app_description = "Hide Doctype From Search"
 app_email = "das@das.com"
 app_license = "mit"
 
