@@ -85,6 +85,8 @@ app_license = "mit"
 # before_install = "hide_doctype.install.before_install"
 # after_install = "hide_doctype.install.after_install"
 
+after_install = "hide_doctype.utils.after_install"
+
 # Uninstallation
 # ------------
 
@@ -144,6 +146,13 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+doc_events = {
+    "Hide Doctype Whitelist": {
+        "on_update": "hide_doctype.utils.apply_user_cannot_search_for_doc",
+        "on_trash": "hide_doctype.utils.apply_user_cannot_search_for_doc"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
