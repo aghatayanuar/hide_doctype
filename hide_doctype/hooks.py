@@ -149,8 +149,13 @@ after_install = "hide_doctype.utils.after_install"
 
 doc_events = {
     "Hide Doctype Whitelist": {
-        "on_update": "hide_doctype.utils.apply_user_cannot_search_for_doc",
-        "on_trash": "hide_doctype.utils.apply_user_cannot_search_for_doc"
+        "on_update": "hide_doctype.utils.update_whitelist_permissions",
+        "on_trash": "hide_doctype.utils.update_whitelist_permissions",
+        "after_insert": "hide_doctype.utils.update_whitelist_permissions"
+    },
+    "User": {
+        "after_insert": "hide_doctype.utils.assign_whitelisted_role",
+        "on_update": "hide_doctype.utils.assign_whitelisted_role"
     }
 }
 
